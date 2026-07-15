@@ -3924,8 +3924,4 @@ html {
         transform: none;
     }
 }
-@media screen and (max-width: 736px) {
-    .side-menu {
-        display:none;
-    }
-}
+
