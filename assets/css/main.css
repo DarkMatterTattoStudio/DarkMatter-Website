@@ -3491,6 +3491,7 @@ input, select, textarea {
 					margin-left: calc(50vw - 8rem);
 				}
 
+
 		}
 
 		@media screen and (max-width: 1280px) and (max-width: 1152px) {
@@ -3872,11 +3873,60 @@ input, select, textarea {
     cursor: pointer;
 }
 
-.gallery img:hover {
-    transform: scale(1.6);
 
 
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
 }
+
+#lightbox img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+    animation: zoomIn .25s ease;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lightbox-img {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.lightbox-img:hover {
+    transform: scale(1.03);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
 .side-menu {
     position: fixed;
     left: 30px;
@@ -3938,4 +3988,27 @@ html {
     font-size: 1rem;
     color: #000000;
     background: #49fcd4;
+}
+#contact {
+    padding-top: 120px;
+}
+#wrapper > section.intro {
+    display: flex;
+    width: 100%;
+}
+
+#wrapper > section.intro .content {
+    width: 100%;
+    max-width: none;
+    flex: 1;
+}
+
+#wrapper > section.intro .image {
+    width: 100%;
+}
+
+#wrapper > section.intro .image img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }

@@ -1,0 +1,156 @@
+/* contact.css */
+
+body {
+    background: #3a3a3a;
+    color: white;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    padding-top: 80px;
+}
+
+
+/* контейнер */
+
+#wrapper {
+    width: 100%;
+}
+
+
+/* секция */
+
+#contact {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem;
+}
+
+
+/* лява част */
+
+#contact header {
+    width: 35%;
+    padding-right: 50px;
+}
+
+
+#contact header h2 {
+    color:white;
+    font-size:1.5rem;
+    letter-spacing:0.1em;
+}
+
+
+#contact header p {
+    color:rgba(255,255,255,0.7);
+}
+
+
+/* дясна част */
+
+#contact .content {
+    width:65%;
+}
+
+
+input,
+textarea {
+
+    background:rgba(255,255,255,0.05);
+
+    border:solid 2px rgba(255,255,255,0.25);
+
+    color:white;
+
+    padding:15px;
+
+    width:100%;
+
+    border-radius:5px;
+
+}
+
+
+textarea {
+    resize:none;
+}
+
+
+/* бутона */
+
+.button.primary {
+
+    background:white;
+
+    color:black !important;
+
+    padding:12px 30px;
+
+    border-radius:5px;
+
+    border:none;
+
+}
+
+
+.button.primary:hover {
+
+    background:#cccccc;
+
+}
+
+
+.button.primary:visited {
+
+    color:black !important;
+
+}
+
+
+/* долна информация */
+
+.items {
+
+    list-style:none;
+
+    padding:0;
+
+    margin-top:50px;
+
+}
+
+
+.items li {
+
+    margin-bottom:25px;
+
+}
+
+
+.items h3 {
+
+    color:white;
+
+}
+
+
+/* мобилен */
+
+@media(max-width:900px){
+
+#contact {
+
+    display:block;
+
+    padding:2rem;
+
+}
+
+
+#contact header,
+#contact .content {
+
+    width:100%;
+
+}
+
+}
