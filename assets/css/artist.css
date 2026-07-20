@@ -205,3 +205,52 @@ p {
     display: block;
     margin: 0 auto 30px auto;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* таблет */
+@media(max-width:1000px){
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+
+/* телефон */
+@media(max-width:600px){
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+
+    .gallery img {
+        border-radius: 6px;
+    }
+
+}
