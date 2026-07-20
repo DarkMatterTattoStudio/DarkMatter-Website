@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>DarkMatterTattooStudio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/artist.css" />
+</head>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const close = document.getElementById("close");
+
+const images = document.querySelectorAll(".lightbox-img");
+
+
+images.forEach(function(img){
+
+    img.addEventListener("click", function(){
+
+        lightbox.style.display = "flex";
+        lightboxImage.src = this.src;
+
+    });
+
+});
+
+
+close.onclick = function(){
+    lightbox.style.display = "none";
+};
+
+
+lightbox.onclick = function(e){
+
+    if(e.target === lightbox){
+        lightbox.style.display = "none";
+    }
+
+};
+
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "Escape"){
+        lightbox.style.display = "none";
+    }
+
+});
+
+
+});
+
+</script>
+<body class="is-preload">
+<div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-image">
+</div>
+    <section id="Kriskata">
+						<header>
+    <div style="margin-top: 50px;"></div>
+    <img src="images/kris.jpeg" class="kris-photo" alt="Kris Tattoo Artist">
+    <h2>Портфолио на Крис</h2>
+
+    <p>
+        Разгледайте част от завършените проекти – от фини и детайлни татуировки до мащабни ръкави,
+        крачоли и индивидуални дизайни, създадени специално за всеки клиент.
+    </p>
+ 
+   
+
+</header>
+						
+						<div style="margin-top: 50px;"
+						class="content">
+							<div style="display:flex; gap:20px;margin-bottom: 20px;">
+    							<img src="images/tattoo1.jpeg" class="lightbox-img">
+    							<img src="images/tattoo2.jpeg" class="lightbox-img">
+                                <img src="images/tattoo3.jpeg" class="lightbox-img">
+    							<img src="images/tattoo4.jpeg" class="lightbox-img">
+                                <img src="images/tattoo5.jpeg" class="lightbox-img">
+   								<img src="images/tattoo6.jpeg" class="lightbox-img">
+                                <img src="images/tattoo7.jpeg" class="lightbox-img">
+  								<img src="images/tattoo8.jpeg" class="lightbox-img">
+                                <img src="images/tattoo9.jpeg"  class="lightbox-img">
+							</div>
+
+							<div style="display:flex; gap:20px; margin-bottom: 20px;">
+    							<img src="images/tattoo10.jpeg" class="lightbox-img">
+                                <img src="images/tattoo11.jpeg" class="lightbox-img">
+    							<img src="images/tattoo12.jpeg" class="lightbox-img">
+                                <img src="images/tattoo13.jpeg" class="lightbox-img">
+   								<img src="images/tattoo14.jpeg" class="lightbox-img">
+                                <img src="images/tattoo15.jpeg" class="lightbox-img">
+  								<img src="images/tattoo16.jpeg" class="lightbox-img">
+    							<img src="images/tattoo17.jpeg" class="lightbox-img">
+  								<img src="images/tattoo18.jpeg" class="lightbox-img">
+							</div>
+							
+							<div style="display:flex; gap:20px; margin-bottom: 20px;">
+
+    						    <img src="images/tattoo19.jpeg" class="lightbox-img">
+							</div>
+<div class="contact-button">
+    <a href="Contact.html" class="button primary">
+        Контакт
+    </a>
+    <a href="index.html" class="button primary">
+        Начало
+    </a>
+</div>
+
+                                
