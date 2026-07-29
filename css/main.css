@@ -4010,7 +4010,8 @@ html {
 #wrapper > section.intro .image img {
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: contain;
+	background: #3a3a3a;
 }
 .artists-container {
     display: flex;
