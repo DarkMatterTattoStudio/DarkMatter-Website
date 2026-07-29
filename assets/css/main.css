@@ -4012,3 +4012,53 @@ html {
     height: 100vh;
     object-fit: cover;
 }
+.artist-card {
+    flex: 1;
+    min-width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.artist-image {
+    position:relative;
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+	margin: 0 auto;
+}
+
+
+.artist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.artist-image span {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: rgba(0,0,0,0.7);
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    color:white;
+
+    white-space: nowrap;
+}
+
+
+.artist-card h3 {
+    text-align:center;
+    margin-top:15px;
+}
