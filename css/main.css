@@ -4013,21 +4013,34 @@ html {
     object-fit: contain;
 	background: #3a3a3a;
 }
+.artists-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin: 50px 0;
+}
+
+
 .artist-card {
     flex: 1;
-    min-width: 300px;
+    min-width: 0;
+    max-width: 500px;
     text-decoration: none;
     color: white;
 }
 
 
 .artist-image {
-    position:relative;
-    width: 80%;
-    height: 500px;
+    position: relative;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
     border-radius: 8px;
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -4040,7 +4053,6 @@ html {
 
 
 .artist-image span {
-
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -4053,15 +4065,15 @@ html {
 
     border-radius: 20px;
 
-    color:white;
+    color: white;
 
     white-space: nowrap;
 }
 
 
 .artist-card h3 {
-    text-align:center;
-    margin-top:15px;
+    text-align: center;
+    margin-top: 15px;
 }
 
 
@@ -4070,19 +4082,26 @@ html {
 @media screen and (max-width: 736px) {
 
     .artists-container {
-        display: flex !important;
-        flex-direction: row !important;
-        flex-wrap: nowrap !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         gap: 10px;
     }
 
     .artist-card {
-        width: calc(50% - 5px) !important;
-        flex: 0 0 calc(50% - 5px) !important;
+        flex: 1;
+        min-width: 0;
+        width: 50%;
     }
 
     .artist-image {
         height: 220px;
+    }
+
+    .artist-image span {
+        font-size: 10px;
+        padding: 6px 8px;
+        bottom: 10px;
     }
 
 }
