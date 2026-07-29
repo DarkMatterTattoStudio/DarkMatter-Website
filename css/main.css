@@ -4020,8 +4020,9 @@ html {
 }
 
 .artist-card {
-    flex: 1 1 45%;
-    min-width: 300px;
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
     text-decoration: none;
     color: white;
 }
@@ -4029,17 +4030,17 @@ html {
 .artist-image {
     position: relative;
     width: 100%;
-    max-width: 600px;
-    height: 500px;
-    margin: 0 auto;
+    height: 400px;
     overflow: hidden;
     border-radius: 8px;
+    margin: 0 auto;
+    background: #222;
 }
 
 .artist-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -4048,7 +4049,7 @@ html {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
     border-radius: 20px;
     color: white;
@@ -4061,35 +4062,26 @@ html {
 }
 
 
-@media screen and (max-width: 700px) {
+/* Телефон */
+@media screen and (max-width: 736px) {
 
-    #second .artists-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        width: 100%;
+    .artist-card {
+        width: 50%;
+        flex: 0 0 calc(50% - 10px);
     }
 
-    #second .artist-card {
-        display: block;
-        width: 100%;
-        max-width: 350px;
-        min-width: 0;
-        margin: 0 auto;
+    .artist-image {
+        height: 220px;
     }
 
-    #second .artist-image {
-        width: 100%;
-        max-width: 350px;
-        height: 250px;
-        margin: 0 auto;
+    .artist-image span {
+        font-size: 11px;
+        padding: 7px 10px;
+        bottom: 10px;
     }
 
-    #second .artist-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .artist-card h3 {
+        font-size: 14px;
     }
 
 }
