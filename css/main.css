@@ -4013,6 +4013,8 @@ html {
     object-fit: contain;
 	background: #3a3a3a;
 }
+/* СНИМКИ НА АРТИСТИТЕ */
+
 .artists-container {
     display: flex;
     flex-direction: row;
@@ -4024,7 +4026,6 @@ html {
     margin: 50px 0;
 }
 
-
 .artist-card {
     flex: 1;
     min-width: 0;
@@ -4033,16 +4034,14 @@ html {
     color: white;
 }
 
-
 .artist-image {
     position: relative;
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 500px;
     overflow: hidden;
     border-radius: 8px;
     margin: 0 auto;
 }
-
 
 .artist-image img {
     width: 100%;
@@ -4051,25 +4050,19 @@ html {
     display: block;
 }
 
-
 .artist-image span {
     position: absolute;
     bottom: 20px;
     left: 50%;
-
     transform: translateX(-50%);
 
-    background: rgba(0,0,0,0.7);
-
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 20px;
-
     border-radius: 20px;
 
     color: white;
-
     white-space: nowrap;
 }
-
 
 .artist-card h3 {
     text-align: center;
@@ -4082,19 +4075,16 @@ html {
 @media screen and (max-width: 736px) {
 
     .artists-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         gap: 10px;
     }
 
     .artist-card {
         flex: 1;
         min-width: 0;
-        width: 50%;
     }
 
     .artist-image {
+        width: 100%;
         height: 220px;
     }
 
